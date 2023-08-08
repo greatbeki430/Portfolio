@@ -1,0 +1,724 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 90px;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Portfolio styles */
+#portfolio {
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+#portfolio h2 {
+    margin: 40px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    text-align: center;
+    width: calc(33.33% - 40px);
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin: 0 auto 30px;
+}
+
+.portfolio-item img {
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.portfolio-item p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .portfolio-item {
+        width: calc(50% - 20px);
+    }
+
+    .portfolio-item h3 {
+        font-size: 1rem;
+    }
+
+    .portfolio-item p {
+        font-size: 0.8rem;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* About styles */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-content img {
+    max-width: 25%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .about-content {
+        max-width: 90%;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Homepage styles */
+#home {
+    background-image: url("people/back.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    #home {
+        padding: 100px 0;
+    }
+
+    .home-content {
+        max-width: 90%;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Other section styles */
+/* ... (styles for different sections) ... */
+/* ... (previous styles) ... */
+
+/* Style the services section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.service {
+    text-align: center;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    /* Adjust the width based on your design */
+}
+
+.service img {
+    max-width: 30%;
+    border-radius: 60%;
+}
+
+.service h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.service p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .service {
+        width: calc(50% - 20px);
+        /* Adjust the width based on your design */
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Case Studies styles */
+#case-studies {
+    padding: 50px;
+    text-align: center;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.case {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.case-study {
+    text-align: center;
+    width: calc(33.33% - 40px);
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin: 0 auto 30px;
+}
+
+.case-study img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.case-study h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.case-study p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .case-study {
+        width: calc(50% - 20px);
+    }
+
+    .case-study h3 {
+        font-size: 1rem;
+    }
+
+    .case-study p {
+        font-size: 0.8rem;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Testimonials styles */
+#testimonials {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.testimonial img {
+    max-width: 50px;
+    /* border-radius: 50%; */
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial blockquote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 15px;
+    padding-left: 70px;
+}
+
+.testimonial cite {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .testimonial {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .testimonial img {
+        max-width: 40px;
+        top: -20px;
+    }
+
+    .testimonial blockquote {
+        font-size: 1rem;
+        padding-left: 60px;
+    }
+
+    .testimonial cite {
+        margin-top: 5px;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Contact styles */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #555;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .contact-info {
+        max-width: 90%;
+    }
+
+    .contact-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Resume styles */
+#resume {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.resume-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.resume-content h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.resume-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .resume-content {
+        max-width: 90%;
+    }
+
+    .resume-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .resume-content p {
+        font-size: 1rem;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Blog styles */
+#blog {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    text-align: center;
+    width: calc(33.33% - 40px);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.blog-post h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.blog-post p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    text-align: justify;
+    justify-content: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .blog-post {
+        width: calc(50% - 20px);
+    }
+
+    .blog-post h3 {
+        font-size: 1rem;
+    }
+
+    .blog-post p {
+        font-size: 0.8rem;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Clients styles */
+#clients {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.client-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.client-list img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .client-list img {
+        max-width: 120px;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* FAQ styles */
+#faq {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.faq-item {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .faq-item {
+        max-width: 90%;
+    }
+
+    .faq-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .faq-item p {
+        font-size: 1rem;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* CTA styles */
+#cta {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.cta-content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.cta-button {
+    background-color: #333;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0819ff;
+    color: #fff;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+
+    .cta-content {
+        max-width: 90%;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-nav {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Align the links to the center */
+}
+
+.footer-links li {
+    margin-right: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.copy-right {
+    font-size: 0.8rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .footer-links li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .copy-right {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+}
